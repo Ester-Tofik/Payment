@@ -1,0 +1,11 @@
+body {
+    align-items: center;
+    text-align: center;
+}
+
+#newPayment {
+    display: none;
+}
+#newRefund {
+    display: none;
+}

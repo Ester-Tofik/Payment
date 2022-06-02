@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store</title>
+    <link rel="stylesheet" href="../css/store.css" />
+    <script src="../js/payment.js"></script>
+    <script src="../js/clearingCompany.js"></script>
+    <script src="../js/credit.js"></script>
+    <script src="../js/srore.js"></script>
+</head>
+
+<body>
+    <div>
+        <br />
+        <button onclick="newPayment()">
+            create new payment📌
+        </button>
+        <br /><br />
+        <div id="newPayment">
+            <input type="date" id="dayOfPayment" />
+            <br /><br />
+            <input type="number" id="sum" />
+            <br /><br />
+            <input type="text" id="description" />
+            <br /><br />
+            <select id="transactionStatus" value="transactionStatus">
+                <option selected disabled>transactionStatus❓</option>
+                <option>😣טרם בוצע </option>
+                <option>😊בוצע </option>
+            </select>
+            <br /><br />
+            <select id="formOfpayment">
+                <option selected disabled>formOfpayment</option>
+                <option>💳credit</option>
+                <option>💵check </option>
+                <option>💲cash</option>
+                <option>🏢clearingCompany</option>
+            </select>
+            <br /><br />
+            <span>Please enter customer details🙏</span><br /><br />
+            <input type="text" id="userName" placeholder="userName" />
+            <br /><br />
+            <input type="text" id="userPhoneNumber" placeholder="userPhoneNumber" />
+            <br /><br />
+            <input type="text" id="userId" placeholder="userId" />
+            <br /><br />
+            <button onclick="savePayment()">save✅</button>
+        </div>
+        <br /><br />
+        <button onclick="newRefund()"> Refund 📌</button><br /><br />
+        <div id="newRefund">
+            Refund amount of: <br /> <br /><input type="number" style="width: 7em;" id="amount" min="0">
+            </input>💰<br /><br />
+            <button onclick="refund()">Confirmation</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
